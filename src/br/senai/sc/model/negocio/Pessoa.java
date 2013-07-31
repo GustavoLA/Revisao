@@ -1,13 +1,13 @@
-
 package br.senai.sc.model.negocio;
 
 /**
- *  Esta classe representa pessoas
- *  @version 1.0 31/07/2013
- *  @author gustavo_lourenco
+ * Esta classe representa pessoas
+ *
+ * @version 1.0 31/07/2013
+ * @author gustavo_lourenco
  */
 public class Pessoa {
-    
+
     private int id;
     private String endereco;
     private String telefone;
@@ -15,8 +15,7 @@ public class Pessoa {
 
     public Pessoa() {
     }
-    
-    
+
     public int getId() {
         return id;
     }
@@ -48,5 +47,4 @@ public class Pessoa {
     public void setDataCadastro(String dataCadastro) {
         this.dataCadastro = dataCadastro;
     }
-        
 }
