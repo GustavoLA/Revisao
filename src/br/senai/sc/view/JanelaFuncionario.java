@@ -49,6 +49,7 @@ public class JanelaFuncionario {
     }
 
     void adicionaFuncionario(List<Funcionario> funcionarios) {
+
         Funcionario f = new Funcionario();
         f.setNome(JOptionPane.showInputDialog("Informe o nome: "));
         f.setDataNascimento(JOptionPane.showInputDialog("Informe a data de nascimento do funcionario: "));

@@ -26,7 +26,8 @@ public class FuncionarioDAO {
     public void listar(List<Funcionario> funcionarios) {
         String msg = "";
         for (Funcionario f : funcionarios) {
-            msg = msg + "\nNome: " + f.getNome()
+            msg = msg + "\nID Funcionario: " + f.codigo
+                    + "\nNome: " + f.getNome()
                     + "\nData de nascimento: " + f.getDataNascimento()
                     + "\nRG: " + f.getRg()
                     + "\nCPF: " + f.getCpf()
@@ -44,9 +45,9 @@ public class FuncionarioDAO {
 
     //Método para excluir atraves do nome
     public void excluir(String nome, List<Funcionario> funcionarios) {
-       
+
         Funcionario fRemove = null;
-        
+
         for (Funcionario f : funcionarios) {
             if (f.getNome().equals(nome)) {
                 fRemove = f;
@@ -63,7 +64,6 @@ public class FuncionarioDAO {
 
     }
 
-    
     //Metodo para buscar funcionarios pelo nome
     public Funcionario buscarFuncionarioByNome(String nome, List<Funcionario> funcionarios) {
         for (Funcionario fBusca : funcionarios) {

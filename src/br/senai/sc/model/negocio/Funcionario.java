@@ -8,12 +8,16 @@ package br.senai.sc.model.negocio;
  */
 public class Funcionario extends PessoaFisica {
 
+    public static int idFuncionario;
+    public int codigo;
     private double salario;
     private String dataAdmissao;
     private String ctps; //ctps = carteira de trabalho
     private String cargo;
 
     public Funcionario() {
+        this.idFuncionario++;
+        codigo = idFuncionario;
     }
 
     public double getSalario() {
